@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Education";
+}
+<h1>@ViewData["Title"]</h1>
+
+<h4>Teknikhögskolan</h4>
+        @foreach (string Courses in ViewBag.Courses)
+        {
+                <li>@Courses</li>
+        }
+
+<h4>JENSEN Gymnasium</h4>
+                @foreach (string Coursesgym in ViewBag.Coursesgym)
+        {
+                <li>@Coursesgym</li>
+        }
